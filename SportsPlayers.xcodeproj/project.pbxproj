@@ -3,18 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		65DB8A9C2362D96A00045675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8A9B2362D96A00045675 /* AppDelegate.swift */; };
 		65DB8A9E2362D96A00045675 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8A9D2362D96A00045675 /* SceneDelegate.swift */; };
-		65DB8AA02362D96A00045675 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8A9F2362D96A00045675 /* ViewController.swift */; };
 		65DB8AA32362D96A00045675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65DB8AA12362D96A00045675 /* Main.storyboard */; };
 		65DB8AA52362D98200045675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65DB8AA42362D98200045675 /* Assets.xcassets */; };
 		65DB8AA82362D98200045675 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65DB8AA62362D98200045675 /* LaunchScreen.storyboard */; };
 		65DB8AB32362D98300045675 /* SportsPlayersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8AB22362D98300045675 /* SportsPlayersTests.swift */; };
 		65DB8ABE2362D98300045675 /* SportsPlayersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8ABD2362D98300045675 /* SportsPlayersUITests.swift */; };
+		65DB8AE22362DD7F00045675 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8AE12362DD7F00045675 /* SplashViewController.swift */; };
+		65DB8AE42362DDB700045675 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8AE32362DDB700045675 /* SplashInteractor.swift */; };
+		65DB8AE62362DE1500045675 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8AE52362DE1500045675 /* SplashPresenter.swift */; };
+		65DB8AE82362DE3C00045675 /* SplashWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8AE72362DE3C00045675 /* SplashWireframe.swift */; };
+		65DB8AEA2362DE4F00045675 /* SplashProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8AE92362DE4F00045675 /* SplashProtocols.swift */; };
+		65DB8AEC2362DF9600045675 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8AEB2362DF9600045675 /* MainViewController.swift */; };
+		65DB8AEE2362DFDA00045675 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8AED2362DFDA00045675 /* MainInteractor.swift */; };
+		65DB8AF02362E01B00045675 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8AEF2362E01B00045675 /* MainPresenter.swift */; };
+		65DB8AF22362E04300045675 /* MainPresenter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8AF12362E04300045675 /* MainPresenter+Extensions.swift */; };
+		65DB8AF42362E0A800045675 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8AF32362E0A800045675 /* MainWireframe.swift */; };
+		65DB8AF62362E0D800045675 /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8AF52362E0D800045675 /* MainProtocols.swift */; };
+		65DB8AF82362E19900045675 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8AF72362E19900045675 /* Player.swift */; };
+		65DB8AFB2362E76B00045675 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8AFA2362E76B00045675 /* APIError.swift */; };
+		65DB8AFD2362E7C100045675 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8AFC2362E7C100045675 /* APIClient.swift */; };
+		65DB8AFF2362E8AF00045675 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8AFE2362E8AF00045675 /* UIViewController+Extension.swift */; };
+		65DB8B012362E98300045675 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65DB8B002362E98300045675 /* Localizable.strings */; };
+		65DB8B052362F4F700045675 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8B032362F4F700045675 /* PlayerTableViewCell.swift */; };
+		65DB8B062362F4F700045675 /* PlayerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65DB8B042362F4F700045675 /* PlayerTableViewCell.xib */; };
+		65DB8B092363015D00045675 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB8B082363015D00045675 /* Section.swift */; };
+		65DB8B0E2363346500045675 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 65DB8B0D2363346500045675 /* Kingfisher */; };
+		65DB8B102363346500045675 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 65DB8B0F2363346500045675 /* KingfisherSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +58,6 @@
 		65DB8A982362D96A00045675 /* SportsPlayers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsPlayers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65DB8A9B2362D96A00045675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65DB8A9D2362D96A00045675 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		65DB8A9F2362D96A00045675 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		65DB8AA22362D96A00045675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65DB8AA42362D98200045675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65DB8AA72362D98200045675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +68,25 @@
 		65DB8AB92362D98300045675 /* SportsPlayersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportsPlayersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65DB8ABD2362D98300045675 /* SportsPlayersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsPlayersUITests.swift; sourceTree = "<group>"; };
 		65DB8ABF2362D98300045675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65DB8AE12362DD7F00045675 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		65DB8AE32362DDB700045675 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
+		65DB8AE52362DE1500045675 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		65DB8AE72362DE3C00045675 /* SplashWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashWireframe.swift; sourceTree = "<group>"; };
+		65DB8AE92362DE4F00045675 /* SplashProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProtocols.swift; sourceTree = "<group>"; };
+		65DB8AEB2362DF9600045675 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		65DB8AED2362DFDA00045675 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		65DB8AEF2362E01B00045675 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		65DB8AF12362E04300045675 /* MainPresenter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainPresenter+Extensions.swift"; sourceTree = "<group>"; };
+		65DB8AF32362E0A800045675 /* MainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
+		65DB8AF52362E0D800045675 /* MainProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
+		65DB8AF72362E19900045675 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		65DB8AFA2362E76B00045675 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		65DB8AFC2362E7C100045675 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		65DB8AFE2362E8AF00045675 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		65DB8B002362E98300045675 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		65DB8B032362F4F700045675 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
+		65DB8B042362F4F700045675 /* PlayerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerTableViewCell.xib; sourceTree = "<group>"; };
+		65DB8B082363015D00045675 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65DB8B102363346500045675 /* KingfisherSwiftUI in Frameworks */,
+				65DB8B0E2363346500045675 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +139,11 @@
 		65DB8A9A2362D96A00045675 /* SportsPlayers */ = {
 			isa = PBXGroup;
 			children = (
+				65DB8ADC2362DC8200045675 /* App */,
+				65DB8ADB2362DC7700045675 /* Services */,
+				65DB8ADA2362DC6400045675 /* Modules */,
 				65DB8A9B2362D96A00045675 /* AppDelegate.swift */,
 				65DB8A9D2362D96A00045675 /* SceneDelegate.swift */,
-				65DB8A9F2362D96A00045675 /* ViewController.swift */,
 				65DB8AA12362D96A00045675 /* Main.storyboard */,
 				65DB8AA42362D98200045675 /* Assets.xcassets */,
 				65DB8AA62362D98200045675 /* LaunchScreen.storyboard */,
@@ -128,6 +170,190 @@
 			path = SportsPlayersUITests;
 			sourceTree = "<group>";
 		};
+		65DB8ACB2362D99D00045675 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8AD32362DA0600045675 /* View */,
+				65DB8AD22362D9FA00045675 /* Interactor */,
+				65DB8AD12362D9F200045675 /* Presenter */,
+				65DB8AD02362D9DC00045675 /* Entity */,
+				65DB8ACF2362D9D600045675 /* Wireframe */,
+				65DB8ACE2362D9CD00045675 /* Protocols */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		65DB8ACC2362D9B400045675 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8AD92362DA4300045675 /* View */,
+				65DB8AD82362DA3700045675 /* Interactor */,
+				65DB8AD72362DA2E00045675 /* Presenter */,
+				65DB8AD62362DA1F00045675 /* Entity */,
+				65DB8AD52362DA1900045675 /* Wireframe */,
+				65DB8AD42362DA0F00045675 /* Protocols */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		65DB8ACE2362D9CD00045675 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8AE92362DE4F00045675 /* SplashProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		65DB8ACF2362D9D600045675 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8AE72362DE3C00045675 /* SplashWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		65DB8AD02362D9DC00045675 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		65DB8AD12362D9F200045675 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8AE52362DE1500045675 /* SplashPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		65DB8AD22362D9FA00045675 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8AE32362DDB700045675 /* SplashInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		65DB8AD32362DA0600045675 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8AE12362DD7F00045675 /* SplashViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		65DB8AD42362DA0F00045675 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8AF52362E0D800045675 /* MainProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		65DB8AD52362DA1900045675 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8AF32362E0A800045675 /* MainWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		65DB8AD62362DA1F00045675 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8AF72362E19900045675 /* Player.swift */,
+				65DB8B082363015D00045675 /* Section.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		65DB8AD72362DA2E00045675 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8AEF2362E01B00045675 /* MainPresenter.swift */,
+				65DB8AF12362E04300045675 /* MainPresenter+Extensions.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		65DB8AD82362DA3700045675 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8AED2362DFDA00045675 /* MainInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		65DB8AD92362DA4300045675 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8B022362F4C500045675 /* Cells */,
+				65DB8AEB2362DF9600045675 /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		65DB8ADA2362DC6400045675 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8ACC2362D9B400045675 /* Main */,
+				65DB8ACB2362D99D00045675 /* Splash */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		65DB8ADB2362DC7700045675 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8ADD2362DC9E00045675 /* API */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		65DB8ADC2362DC8200045675 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8ADE2362DCBC00045675 /* Resources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		65DB8ADD2362DC9E00045675 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8AF92362E72700045675 /* Network */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		65DB8ADE2362DCBC00045675 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8AFE2362E8AF00045675 /* UIViewController+Extension.swift */,
+				65DB8B002362E98300045675 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		65DB8AF92362E72700045675 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8AFA2362E76B00045675 /* APIError.swift */,
+				65DB8AFC2362E7C100045675 /* APIClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		65DB8B022362F4C500045675 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				65DB8B032362F4F700045675 /* PlayerTableViewCell.swift */,
+				65DB8B042362F4F700045675 /* PlayerTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +370,10 @@
 			dependencies = (
 			);
 			name = SportsPlayers;
+			packageProductDependencies = (
+				65DB8B0D2363346500045675 /* Kingfisher */,
+				65DB8B0F2363346500045675 /* KingfisherSwiftUI */,
+			);
 			productName = SportsPlayers;
 			productReference = 65DB8A982362D96A00045675 /* SportsPlayers.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +446,9 @@
 				Base,
 			);
 			mainGroup = 65DB8A8F2362D96A00045675;
+			packageReferences = (
+				65DB8B0C2363346500045675 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 65DB8A992362D96A00045675 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +466,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				65DB8AA82362D98200045675 /* LaunchScreen.storyboard in Resources */,
+				65DB8B012362E98300045675 /* Localizable.strings in Resources */,
+				65DB8B062362F4F700045675 /* PlayerTableViewCell.xib in Resources */,
 				65DB8AA52362D98200045675 /* Assets.xcassets in Resources */,
 				65DB8AA32362D96A00045675 /* Main.storyboard in Resources */,
 			);
@@ -259,9 +494,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65DB8AA02362D96A00045675 /* ViewController.swift in Sources */,
+				65DB8AFF2362E8AF00045675 /* UIViewController+Extension.swift in Sources */,
+				65DB8AEA2362DE4F00045675 /* SplashProtocols.swift in Sources */,
+				65DB8AFD2362E7C100045675 /* APIClient.swift in Sources */,
+				65DB8AF42362E0A800045675 /* MainWireframe.swift in Sources */,
+				65DB8AF62362E0D800045675 /* MainProtocols.swift in Sources */,
+				65DB8B092363015D00045675 /* Section.swift in Sources */,
 				65DB8A9C2362D96A00045675 /* AppDelegate.swift in Sources */,
+				65DB8AEE2362DFDA00045675 /* MainInteractor.swift in Sources */,
+				65DB8B052362F4F700045675 /* PlayerTableViewCell.swift in Sources */,
+				65DB8AE42362DDB700045675 /* SplashInteractor.swift in Sources */,
+				65DB8AE82362DE3C00045675 /* SplashWireframe.swift in Sources */,
 				65DB8A9E2362D96A00045675 /* SceneDelegate.swift in Sources */,
+				65DB8AEC2362DF9600045675 /* MainViewController.swift in Sources */,
+				65DB8AF02362E01B00045675 /* MainPresenter.swift in Sources */,
+				65DB8AF22362E04300045675 /* MainPresenter+Extensions.swift in Sources */,
+				65DB8AE22362DD7F00045675 /* SplashViewController.swift in Sources */,
+				65DB8AFB2362E76B00045675 /* APIError.swift in Sources */,
+				65DB8AF82362E19900045675 /* Player.swift in Sources */,
+				65DB8AE62362DE1500045675 /* SplashPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +688,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4BC2PWL3D8;
 				INFOPLIST_FILE = SportsPlayers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +707,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4BC2PWL3D8;
 				INFOPLIST_FILE = SportsPlayers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -590,6 +843,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		65DB8B0C2363346500045675 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		65DB8B0D2363346500045675 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65DB8B0C2363346500045675 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		65DB8B0F2363346500045675 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65DB8B0C2363346500045675 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 65DB8A902362D96A00045675 /* Project object */;
 }

@@ -1,24 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Splash View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplashVC" id="BYZ-38-t0r" customClass="SplashViewController" customModule="SportsPlayers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sportscourt" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Gsr-y6-8po">
+                                <rect key="frame" x="16" y="109" width="382" height="270.5"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnG-JU-2lG">
+                                <rect key="frame" x="16" y="396.5" width="382" height="33.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="XnQ-o8-gua">
+                                <rect key="frame" x="188.5" y="697" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wnG-JU-2lG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1cL-UB-itJ"/>
+                            <constraint firstItem="XnQ-o8-gua" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7Pz-xD-Ilt"/>
+                            <constraint firstItem="Gsr-y6-8po" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Bsm-7i-yDf"/>
+                            <constraint firstItem="wnG-JU-2lG" firstAttribute="top" secondItem="Gsr-y6-8po" secondAttribute="bottom" constant="16" id="D9W-7U-t1B"/>
+                            <constraint firstItem="Gsr-y6-8po" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="1:3" id="FFA-mF-NIe"/>
+                            <constraint firstItem="Gsr-y6-8po" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="LYv-I5-kiW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wnG-JU-2lG" secondAttribute="trailing" constant="16" id="ZU0-uk-Y50"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gsr-y6-8po" secondAttribute="trailing" constant="16" id="k46-U8-HcM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XnQ-o8-gua" secondAttribute="bottom" constant="128" id="sFO-Yj-siB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="XnQ-o8-gua" id="gpH-SE-m3I"/>
+                        <outlet property="lbTitle" destination="wnG-JU-2lG" id="Ope-4b-Wpl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="141" y="139"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="Aab-Lu-2WX">
+            <objects>
+                <viewController storyboardIdentifier="MainVC" id="EpL-S8-TYu" customClass="MainViewController" customModule="SportsPlayers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z6t-jn-gYM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4az-1x-19p">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4az-1x-19p" firstAttribute="top" secondItem="wax-Bm-Qd7" secondAttribute="top" id="aBr-wE-M2D"/>
+                            <constraint firstItem="4az-1x-19p" firstAttribute="leading" secondItem="wax-Bm-Qd7" secondAttribute="leading" id="pYf-Vw-hJ3"/>
+                            <constraint firstItem="wax-Bm-Qd7" firstAttribute="trailing" secondItem="4az-1x-19p" secondAttribute="trailing" id="x2l-cR-QHw"/>
+                            <constraint firstItem="wax-Bm-Qd7" firstAttribute="bottom" secondItem="4az-1x-19p" secondAttribute="bottom" id="zan-f0-bYw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wax-Bm-Qd7"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="4az-1x-19p" id="l53-v0-3Fi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hP5-mh-2vj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077" y="139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sportscourt" catalog="system" width="64" height="40"/>
+    </resources>
 </document>
